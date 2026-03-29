@@ -1,12 +1,11 @@
-# [[ICCV'23](https://openaccess.thecvf.com/content/ICCV2023/html/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.html)] Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining
-
-<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>  [![report](https://img.shields.io/badge/ArXiv-Paper-red)](https://arxiv.org/abs/2307.14768)
+# SEN: Semantic-Enhanced Network for Gloss-Free Sign Language Translation
+<!-- <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>  [![report](https://img.shields.io/badge/ArXiv-Paper-red)](https://arxiv.org/abs/2307.14768) -->
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gloss-free-sign-language-translation/gloss-free-sign-language-translation-on)](https://paperswithcode.com/sota/gloss-free-sign-language-translation-on?p=gloss-free-sign-language-translation)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gloss-free-sign-language-translation/gloss-free-sign-language-translation-on-csl)](https://paperswithcode.com/sota/gloss-free-sign-language-translation-on-csl?p=gloss-free-sign-language-translation)
 
 
-This repo is the official implementation of "Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining" as well as the follow-ups. It currently includes code and models for the following tasks:
+This repo is the official implementation of "SEN: Semantic-Enhanced Network for Gloss-Free Sign Language Translation" as well as the follow-ups. It currently includes code and models for the following tasks:
 
 > **Gloss-free Sign Language Translation**: Included in this repo.
 
@@ -16,7 +15,7 @@ This repo is the official implementation of "Gloss-free Sign Language Translatio
 
 ## NEWS
 
-***2023/12/26***
+***2026/3/29***
 
 1. One can use the official 12-layer Mbart decoder for text decoding by setting ```--decoder-type LLMD```. However, it is important to note that this requires pre-training using ```train_vlp.py```.
 
