@@ -29,7 +29,7 @@ conda activate gfslt
 pip install -r requirements.txt
 ```
 
-
+<!-- 
 ## Getting Started
 <img src="./demo/pipeline.jpg" alt="" style="zoom: 60%;" />
 
@@ -50,7 +50,7 @@ If the objective is to simultaneously pre-train both the visual encoder and text
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=1236 --use_env train_vlp_v2.py --batch-size 4 --epochs 80 --opt sgd --lr 0.01 --output_dir out/vlp_v2 --training-refurbish True --noise-rate 0.15 --noise-type omit_last --random-shuffle False  
 ```
 
-### GFSLT-VLP
+### SEN
 Irrespective of the chosen pre-training strategy, when undertaking downstream sign language translation tasks, 
 you only need to utilize the --finetune hyperparameter to designate the relevant pre-trained model.
 ```bash
@@ -63,13 +63,13 @@ To obtain more accurate evaluation results and multiple metrics, including BLER-
 ```bash
 CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --master_port=1236 --use_env train_slt.py --batch-size 2 --epochs 200 --opt sgd --lr 0.01 --output_dir out/Gloss-Free --resume out/Gloss-Free/best_checkpoint.pth --eval 
 ```
-However, to use these commands, you need to install the [nlgeval](https://github.com/Maluuba/nlg-eval) package, one can also refer to the [README.md](./metrics/README.md) for instructions on how to install it.
+However, to use these commands, you need to install the [nlgeval](https://github.com/Maluuba/nlg-eval) package, one can also refer to the [README.md](./metrics/README.md) for instructions on how to install it. -->
 
-## Citation
+<!-- ## Citation
 
-If you find our work useful for your project, please consider citing the paper:
+If you find our work useful for your project, please consider citing the paper: -->
 
-```bibtex
+<!-- ```bibtex
 @InProceedings{Zhou_2023_ICCV,
     author    = {Zhou, Benjia and Chen, Zhigang and Clap\'es, Albert and Wan, Jun and Liang, Yanyan and Escalera, Sergio and Lei, Zhen and Zhang, Du},
     title     = {Gloss-Free Sign Language Translation: Improving from Visual-Language Pretraining},
@@ -78,7 +78,7 @@ If you find our work useful for your project, please consider citing the paper:
     year      = {2023},
     pages     = {20871-20881}
 }
-```
+``` -->
 
 # LICENSE
 The code is released under the MIT license.
